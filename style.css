@@ -4,11 +4,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
 }
 
 :root{
-  --backgroud: hsl(222, 26%, 31%);
-  --backgroud-keyboard: hsl(223, 31%, 20%);
+  --background: hsl(222, 26%, 31%);
+  --background-keyboard: hsl(223, 31%, 20%);
   --background-result: hsl(224, 36%, 15%);
 
   --background-buttons-numbers: hsl(30, 25%, 89%);
@@ -19,12 +20,12 @@
   --background-buttons-key-toggle-shadow: hsl(6, 70%, 34%);
   
   --color-buttons-numbers: hsl(221, 14%, 31%);
-  --color-text: hsl(0, 0, 100%)
+  --color-text: #fff;
 }
 
 .light{
-  --backgroud: hsl(0, 0%, 90%);
-  --backgroud-keyboard: hsl(0, 5%, 81%);
+  --background: hsl(0, 0%, 90%);
+  --background-keyboard: hsl(0, 5%, 81%);
   --background-result: hsl(0, 0%, 93%);
 
   --background-buttons-numbers: hsl(45, 7%, 89%);
@@ -35,13 +36,13 @@
   --background-buttons-key-toggle-shadow: hsl(25, 99%, 27%);
   
   --color-buttons-numbers: hsl(60, 10%, 19%);
-  --color-text: hsl(0, 0, 100%)
+  --color-text: #fff;
 
 }
 
 .violet{
-  --backgroud: hsl(268, 75%, 9%);
-  --backgroud-keyboard: hsl(268, 71%, 12%);
+  --background: hsl(268, 75%, 9%);
+  --background-keyboard: hsl(268, 71%, 12%);
   --background-result: hsl(268, 71%, 12%);
 
   --background-buttons-numbers: hsl(268, 47%, 21%);
@@ -52,11 +53,92 @@
   --background-buttons-key-toggle-shadow: hsl(177, 92%, 70%);
   
   --color-buttons-numbers: hsl(52, 100%, 62%);
-  --color-text: hsl(0, 0, 100%)
+  --color-text: #fff;
 
 }
 
 body{
-  background-color: var(--backgroud);
+  background-color: var(--background);
+  color: var(--color-text);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.container{
+  /* background-color: red; */
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result{
+  background-color: var(--background-result);
+  padding: 25px 20px;
+  border-radius: 5px;
+}
+
+.result input{
+  background-color: var(--background-result);
+  font-size: 32px;
+  border: none;
+  color: var(--color-text);
+  text-align: right;
+  outline: none;
+}
+
+.keyboard{
+  background-color: var(--background-keyboard);
+  border-radius: 5px;
+  padding: 25px;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  grid-template: repeat(5,45px) / repeat(4,70px);
+  grid-template-areas: 
+  "t7 t8 t9 tdl"
+  "t4 t5 t6 tmx"
+  "t1 t2 t3 tmn"
+  "tp t0 td tx"
+  "tr tr ti ti";
+
+} 
+
+.keyboard button{
+  background-color: var(--background-buttons-numbers);
+  border: none;
+  border-bottom: 3px solid var(--background-buttons-numbers-shadow) ;
+  font-size: 32px;
+  border-radius: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.keyboard .tr{
+  grid-area: tr;
+}
+
+.keyboard .ti{
+  grid-area: ti;
+  background-color: var(--background-buttons-key-toggle);
+  border-color: var(--background-buttons-key-toggle-shadow);
+}
+
+.keyboard .delete{
+  background-color: var(--background-delete-buttons);
+  border-color: var(--background-delete-buttons-shadow);
+  font-size: 20px;
+}
+
+.keyboard .delete, .keyboard .ti{
+  color: var(--color-text);
+}
