@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --backgroud: hsl(222, 26%, 31%);
+  --backgroud-keyboard: hsl(223, 31%, 20%);
+  --background-result: hsl(224, 36%, 15%);
+
+  --background-buttons-numbers: hsl(30, 25%, 89%);
+  --background-buttons-numbers-shadow: hsl(28, 16%, 65%);
+  --background-delete-buttons: hsl(225, 21%, 49%);
+  --background-delete-buttons-shadow: hsl(224, 28%, 35%);
+  --background-buttons-key-toggle: hsl(6, 63%, 50%);
+  --background-buttons-key-toggle-shadow: hsl(6, 70%, 34%);
+  
+  --color-buttons-numbers: hsl(221, 14%, 31%);
+  --color-text: hsl(0, 0, 100%)
+}
+
+.light{
+  --backgroud: hsl(0, 0%, 90%);
+  --backgroud-keyboard: hsl(0, 5%, 81%);
+  --background-result: hsl(0, 0%, 93%);
+
+  --background-buttons-numbers: hsl(45, 7%, 89%);
+  --background-buttons-numbers-shadow: hsl(35, 11%, 61%);
+  --background-delete-buttons: hsl(185, 42%, 37%);
+  --background-delete-buttons-shadow: hsl(185, 58%, 25%);
+  --background-buttons-key-toggle: hsl(25, 98%, 40%);
+  --background-buttons-key-toggle-shadow: hsl(25, 99%, 27%);
+  
+  --color-buttons-numbers: hsl(60, 10%, 19%);
+  --color-text: hsl(0, 0, 100%)
+
+}
+
+.violet{
+  --backgroud: hsl(268, 75%, 9%);
+  --backgroud-keyboard: hsl(268, 71%, 12%);
+  --background-result: hsl(268, 71%, 12%);
+
+  --background-buttons-numbers: hsl(268, 47%, 21%);
+  --background-buttons-numbers-shadow: hsl(290, 70%, 36%);
+  --background-delete-buttons: hsl(281, 89%, 26%);
+  --background-delete-buttons-shadow: hsl(285, 91%, 52%);
+  --background-buttons-key-toggle: hsl(176, 100%, 44%);
+  --background-buttons-key-toggle-shadow: hsl(177, 92%, 70%);
+  
+  --color-buttons-numbers: hsl(52, 100%, 62%);
+  --color-text: hsl(0, 0, 100%)
+
+}
+
+body{
+  background-color: var(--backgroud);
+}
+
