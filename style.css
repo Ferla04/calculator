@@ -36,7 +36,7 @@
   --background-buttons-key-toggle-shadow: hsl(25, 99%, 27%);
   
   --color-buttons-numbers: hsl(60, 10%, 19%);
-  --color-text: #fff;
+  --color-text: hsl(60, 10%, 19%);
 
 }
 
@@ -53,7 +53,7 @@
   --background-buttons-key-toggle-shadow: hsl(177, 92%, 70%);
   
   --color-buttons-numbers: hsl(52, 100%, 62%);
-  --color-text: #fff;
+  --color-text: hsl(52, 100%, 62%);;
 
 }
 
@@ -103,7 +103,7 @@ header{
   display: grid;
   gap: 20px;
   justify-content: center;
-  grid-template: repeat(5,45px) / repeat(4,70px);
+  grid-template: repeat(5,50px) / repeat(4,75px);
   grid-template-areas: 
   "t7 t8 t9 tdl"
   "t4 t5 t6 tmx"
@@ -117,6 +117,7 @@ header{
   background-color: var(--background-buttons-numbers);
   border: none;
   border-bottom: 3px solid var(--background-buttons-numbers-shadow) ;
+  color: var(--color-buttons-numbers);
   font-size: 32px;
   border-radius: 5px;
   padding-top: 5px;
@@ -140,5 +141,5 @@ header{
 }
 
 .keyboard .delete, .keyboard .ti{
-  color: var(--color-text);
+  color: #fff;
 }
