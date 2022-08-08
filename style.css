@@ -82,7 +82,6 @@ body{
 }
 
 .container{
-  /* background-color: red; */
   width: 400px;
   height: 500px;
   display: flex;
@@ -90,11 +89,66 @@ body{
   gap: 20px;
 }
 
+/* -------------- Header With CONTROL-THEME----------------  */
+
 header{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
+
+header section{
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+header section h5{
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+.control-theme div:first-child{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 3px;
+}
+
+.control-theme label{
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.options-theme{
+  display: flex;
+  gap: 5px;
+  background-color: var(--background-keyboard);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.options-theme input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--background-buttons-key-toggle);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  opacity: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.options-theme input:hover{
+  background-color: var(--background-buttons-key-toggle-hover)
+}
+
+.options-theme input:checked{
+  opacity: 1;
+}
+
+/* -------------- Resultados de la operacion ----------------  */
 
 .result{
   background-color: var(--background-result);
@@ -111,6 +165,7 @@ header{
   outline: none;
 }
 
+/* -------------- Teclado numerico ----------------  */
 .keyboard{
   background-color: var(--background-keyboard);
   border-radius: 5px;

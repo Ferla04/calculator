@@ -8,14 +8,26 @@
   <link rel="stylesheet" class="style" href="./style.css">
   <title>Frontend Mentor | Calculator app</title>
 </head>
-<body class="">
+<body class="main">
   <div class="container">
 
     <header>
       <h1>calc</h1>
-      <div class="control-theme">
-        ............
-      </div>
+      <section>
+        <h5>THEME</h5>
+        <div class="control-theme">
+          <div>
+            <label for="main">1</label>
+            <label for="light">2</label>
+            <label for="violet">3</label>
+          </div>
+          <div class="options-theme">
+              <input type="radio" name="theme" onclick="changeTheme('main')" id="main" checked>
+              <input type="radio" name="theme" onclick="changeTheme('light')" id="light">
+              <input type="radio" name="theme" onclick="changeTheme('violet')" id="violet">
+          </div>
+        </div>
+      </section>
     </header>
 
     <section class="result">
