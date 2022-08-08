@@ -14,10 +14,15 @@
 
   --background-buttons-numbers: hsl(30, 25%, 89%);
   --background-buttons-numbers-shadow: hsl(28, 16%, 65%);
+  --background-buttons-numbers-hover: hsl(0, 0%, 100%);
+
   --background-delete-buttons: hsl(225, 21%, 49%);
   --background-delete-buttons-shadow: hsl(224, 28%, 35%);
+  --background-delete-buttons-hover: hsl(218deg 53% 74%);
+
   --background-buttons-key-toggle: hsl(6, 63%, 50%);
   --background-buttons-key-toggle-shadow: hsl(6, 70%, 34%);
+  --background-buttons-key-toggle-hover: hsl(4deg 100% 67%);
   
   --color-buttons-numbers: hsl(221, 14%, 31%);
   --color-text: #fff;
@@ -30,10 +35,15 @@
 
   --background-buttons-numbers: hsl(45, 7%, 89%);
   --background-buttons-numbers-shadow: hsl(35, 11%, 61%);
+  --background-buttons-numbers-hover: hsl(0, 0%, 100%);
+
   --background-delete-buttons: hsl(185, 42%, 37%);
   --background-delete-buttons-shadow: hsl(185, 58%, 25%);
+  --background-delete-buttons-hover: hsl(182deg 82% 41%);
+
   --background-buttons-key-toggle: hsl(25, 98%, 40%);
   --background-buttons-key-toggle-shadow: hsl(25, 99%, 27%);
+  --background-buttons-key-toggle-hover: hsl(23deg 100% 60%);
   
   --color-buttons-numbers: hsl(60, 10%, 19%);
   --color-text: hsl(60, 10%, 19%);
@@ -47,10 +57,15 @@
 
   --background-buttons-numbers: hsl(268, 47%, 21%);
   --background-buttons-numbers-shadow: hsl(290, 70%, 36%);
+  --background-buttons-numbers-hover: hsl(272deg 54% 43%);
+
   --background-delete-buttons: hsl(281, 89%, 26%);
   --background-delete-buttons-shadow: hsl(285, 91%, 52%);
+  --background-delete-buttons-hover: hsl(288deg 58% 43%);
+
   --background-buttons-key-toggle: hsl(176, 100%, 44%);
   --background-buttons-key-toggle-shadow: hsl(177, 92%, 70%);
+  --background-buttons-key-toggle-hover: hsl(178deg 100% 64%);
   
   --color-buttons-numbers: hsl(52, 100%, 62%);
   --color-text: hsl(52, 100%, 62%);;
@@ -124,6 +139,10 @@ header{
   cursor: pointer;
 }
 
+.keyboard button:hover{
+  background-color: var(--background-buttons-numbers-hover);
+}
+
 .keyboard .tr{
   grid-area: tr;
 }
@@ -134,12 +153,20 @@ header{
   border-color: var(--background-buttons-key-toggle-shadow);
 }
 
+.keyboard .ti:hover{
+  background-color: var(--background-buttons-key-toggle-hover);
+}
+
 .keyboard .delete{
   background-color: var(--background-delete-buttons);
   border-color: var(--background-delete-buttons-shadow);
   font-size: 20px;
 }
 
+.keyboard .delete:hover{
+  background-color: var(--background-delete-buttons-hover);
+}
+
 .keyboard .delete, .keyboard .ti{
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
