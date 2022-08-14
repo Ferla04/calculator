@@ -22,7 +22,7 @@ const changeInput = ( buttonValue ) => {
 const getResultInputValue = ( value ) => {
   const evalText = [...value].map( e => isNaN(e) && e !== '.' ? ` ${e} ` : e ).join('')
   const resultOperation = eval(evalText.replace(/x/g, '*'))
-  inputValue = resultOperation%1 !== 0 ? resultOperation.toFixed(3) : resultOperation
+  inputValue = resultOperation%1 !== 0 ? `${resultOperation.toFixed(3)}` : `${resultOperation}`
 }
 
 const checkButtons = ( last, buttonValue ) => {
