@@ -148,7 +148,7 @@ header section h5{
   opacity: 1;
 }
 
-/* -------------- Resultados de la operacion ----------------  */
+/* -------------- Operaction Results ----------------  */
 
 .result{
   background-color: var(--background-result);
@@ -165,7 +165,7 @@ header section h5{
   outline: none;
 }
 
-/* -------------- Teclado numerico ----------------  */
+/* -------------- Numeric keyboard ----------------  */
 .keyboard{
   background-color: var(--background-keyboard);
   border-radius: 5px;
